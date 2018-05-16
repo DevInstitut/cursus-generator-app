@@ -6,6 +6,7 @@ module.exports = {
             trainings: [
                 {
                     name: 'Spring Context',
+                    image: 'images/yuna.jpg',
                     description: `
                         Lorem ipsum dolor sit amet consectetur adipiscing elit blandit quisque elementum, primis viverra scelerisque dictumst cubilia sollicitudin cursus porta mauris aliquet, ullamcorper torquent penatibus pulvinar molestie luctus ad volutpat himenaeos. Magnis maecenas cum leo faucibus ad aptent nam, primis aliquet dapibus sed et neque, iaculis montes viverra malesuada eu dictumst. Ultricies tellus phasellus habitasse imperdiet tortor nec cras, senectus vestibulum nunc dui netus platea augue, turpis leo pellentesque suscipit posuere condimentum.
                     `,
@@ -13,6 +14,7 @@ module.exports = {
                 },
                 {
                     name: 'Spring Data',
+                    image: 'images/yuna.jpg',
                     description: `
                        Lorem ipsum dolor sit amet consectetur adipiscing elit blandit quisque elementum, primis viverra scelerisque dictumst cubilia sollicitudin cursus porta mauris aliquet, ullamcorper torquent penatibus pulvinar molestie luctus ad volutpat himenaeos. Magnis maecenas cum leo faucibus ad aptent nam, primis aliquet dapibus sed et neque, iaculis montes viverra malesuada eu dictumst. Ultricies tellus phasellus habitasse imperdiet tortor nec cras, senectus vestibulum nunc dui netus platea augue, turpis leo pellentesque suscipit posuere condimentum.
                     `,
@@ -20,6 +22,7 @@ module.exports = {
                 },
                 {
                     name: 'Spring Web MVC',
+                    image: 'images/yuna.jpg',
                     description: `
                        Lorem ipsum dolor sit amet consectetur adipiscing elit blandit quisque elementum, primis viverra scelerisque dictumst cubilia sollicitudin cursus porta mauris aliquet, ullamcorper torquent penatibus pulvinar molestie luctus ad volutpat himenaeos. Magnis maecenas cum leo faucibus ad aptent nam, primis aliquet dapibus sed et neque, iaculis montes viverra malesuada eu dictumst. Ultricies tellus phasellus habitasse imperdiet tortor nec cras, senectus vestibulum nunc dui netus platea augue, turpis leo pellentesque suscipit posuere condimentum.
                     `,
@@ -27,6 +30,7 @@ module.exports = {
                 },
                 {
                     name: 'Spring Security',
+                    image: 'images/yuna.jpg',
                     description: `
                        Lorem ipsum dolor sit amet consectetur adipiscing elit blandit quisque elementum, primis viverra scelerisque dictumst cubilia sollicitudin cursus porta mauris aliquet, ullamcorper torquent penatibus pulvinar molestie luctus ad volutpat himenaeos. Magnis maecenas cum leo faucibus ad aptent nam, primis aliquet dapibus sed et neque, iaculis montes viverra malesuada eu dictumst. Ultricies tellus phasellus habitasse imperdiet tortor nec cras, senectus vestibulum nunc dui netus platea augue, turpis leo pellentesque suscipit posuere condimentum.
                     `,
@@ -34,6 +38,7 @@ module.exports = {
                 },
                 {
                     name: 'Spring Boot',
+                    image: 'images/yuna.jpg',
                     description:`
                        Lorem ipsum dolor sit amet consectetur adipiscing elit blandit quisque elementum, primis viverra scelerisque dictumst cubilia sollicitudin cursus porta mauris aliquet, ullamcorper torquent penatibus pulvinar molestie luctus ad volutpat himenaeos. Magnis maecenas cum leo faucibus ad aptent nam, primis aliquet dapibus sed et neque, iaculis montes viverra malesuada eu dictumst. Ultricies tellus phasellus habitasse imperdiet tortor nec cras, senectus vestibulum nunc dui netus platea augue, turpis leo pellentesque suscipit posuere condimentum.
                     `,
@@ -49,6 +54,7 @@ module.exports = {
             trainings: [
                 {
                     name: 'Introduction à NPM',
+                    image: 'images/yuna.jpg',
                     description: `
                        Lorem ipsum dolor sit amet consectetur adipiscing elit blandit quisque elementum, primis viverra scelerisque dictumst cubilia sollicitudin cursus porta mauris aliquet, ullamcorper torquent penatibus pulvinar molestie luctus ad volutpat himenaeos. Magnis maecenas cum leo faucibus ad aptent nam, primis aliquet dapibus sed et neque, iaculis montes viverra malesuada eu dictumst. Ultricies tellus phasellus habitasse imperdiet tortor nec cras, senectus vestibulum nunc dui netus platea augue, turpis leo pellentesque suscipit posuere condimentum.
                     `,
@@ -56,6 +62,7 @@ module.exports = {
                 },
                 {
                     name: 'ECMAScript 2015+',
+                    image: 'images/yuna.jpg',
                     description:`
                        Lorem ipsum dolor sit amet consectetur adipiscing elit blandit quisque elementum, primis viverra scelerisque dictumst cubilia sollicitudin cursus porta mauris aliquet, ullamcorper torquent penatibus pulvinar molestie luctus ad volutpat himenaeos. Magnis maecenas cum leo faucibus ad aptent nam, primis aliquet dapibus sed et neque, iaculis montes viverra malesuada eu dictumst. Ultricies tellus phasellus habitasse imperdiet tortor nec cras, senectus vestibulum nunc dui netus platea augue, turpis leo pellentesque suscipit posuere condimentum.
                     `,
@@ -63,6 +70,7 @@ module.exports = {
                 },
                 {
                     name: 'TypeScript',
+                    image: 'images/yuna.jpg',
                     description: `
                        Lorem ipsum dolor sit amet consectetur adipiscing elit blandit quisque elementum, primis viverra scelerisque dictumst cubilia sollicitudin cursus porta mauris aliquet, ullamcorper torquent penatibus pulvinar molestie luctus ad volutpat himenaeos. Magnis maecenas cum leo faucibus ad aptent nam, primis aliquet dapibus sed et neque, iaculis montes viverra malesuada eu dictumst. Ultricies tellus phasellus habitasse imperdiet tortor nec cras, senectus vestibulum nunc dui netus platea augue, turpis leo pellentesque suscipit posuere condimentum.
                     `,
@@ -70,6 +78,7 @@ module.exports = {
                 },
                 {
                     name: 'Webpack',
+                    image: 'images/yuna.jpg',
                     description: `
                        Lorem ipsum dolor sit amet consectetur adipiscing elit blandit quisque elementum, primis viverra scelerisque dictumst cubilia sollicitudin cursus porta mauris aliquet, ullamcorper torquent penatibus pulvinar molestie luctus ad volutpat himenaeos. Magnis maecenas cum leo faucibus ad aptent nam, primis aliquet dapibus sed et neque, iaculis montes viverra malesuada eu dictumst. Ultricies tellus phasellus habitasse imperdiet tortor nec cras, senectus vestibulum nunc dui netus platea augue, turpis leo pellentesque suscipit posuere condimentum.
                     `,
@@ -77,6 +86,7 @@ module.exports = {
                 },
                 {
                     name: 'Angular',
+                    image: 'images/yuna.jpg',
                     description: `
                        Lorem ipsum dolor sit amet consectetur adipiscing elit blandit quisque elementum, primis viverra scelerisque dictumst cubilia sollicitudin cursus porta mauris aliquet, ullamcorper torquent penatibus pulvinar molestie luctus ad volutpat himenaeos. Magnis maecenas cum leo faucibus ad aptent nam, primis aliquet dapibus sed et neque, iaculis montes viverra malesuada eu dictumst. Ultricies tellus phasellus habitasse imperdiet tortor nec cras, senectus vestibulum nunc dui netus platea augue, turpis leo pellentesque suscipit posuere condimentum.
                     `,

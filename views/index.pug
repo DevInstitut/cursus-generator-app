@@ -1,0 +1,24 @@
+html(lang=fr)
+    head
+        title='Formation Développeur Java / Angular'
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    body.container
+        h1.header.center
+            span='Formation Développeur FullStack'
+        h4.header.center='#Java #Spring #Angular'
+
+        ul.collection.with-header
+            each cursus in cfg.cursusList
+                li.collection-header
+                    h4=cursus.name
+                each t in cursus.trainings
+                    li.collection-item.avatar
+                        div
+                            img.circle(src=t.image)
+                            p=t.name
+                            a.secondary-content(href=t.git)
+                                i.material-icons='send'
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js')
