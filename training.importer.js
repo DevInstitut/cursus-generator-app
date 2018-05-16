@@ -1,10 +1,8 @@
 const fs = require('fs')
 const sh = require("shelljs")
-const nodegit = require("nodegit")
 const config = require('./config')
 const utils = require('./utils');
 
-const Clone = nodegit.Clone
 const lg = console.log
 
 const WORK_DIR = './work'
@@ -21,18 +19,12 @@ const importOneTraining = (gitUrl) => {
     const repoName = utils.findRepoName(gitUrl)
     const repoDir =`${WORK_DIR}/${repoName}`
 
-    Clone.clone(gitUrl, repoDir)
-        .then((repo) => {
-                lg('cool', repo)
+    const cmds = [
+        `cd ${WORK_DIR} && git clone ${gitUrl}`,
+        `cd ${repoDir} && ../../node_modules/.bin/gitbook install && ../../node_modules/.bin/gitbook build`,
+        `cp -r ${repoDir}/_book ./${TRAINING_DIR}/${repoName}`]
 
-                const cmds = [
-                    `cd ${repoDir} && ../../node_modules/.bin/gitbook install && ../../node_modules/.bin/gitbook build`,
-                    `cp -r ${repoDir}/_book ./${TRAINING_DIR}/${repoName}`]
-
-                cmds.forEach(sh.exec);
-            }
-        )
-        .catch(lg);
+    cmds.forEach(sh.exec)
 }
 
 async function importAllTrainings() {
