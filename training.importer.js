@@ -27,7 +27,7 @@ const importOneTraining = (gitUrl) => {
     cmds.forEach(sh.exec)
 }
 
-async function importAllTrainings() {
+function importAllTrainings() {
 
     const gitUrls = [].concat.apply([],
         config.cursusList.map(c => c.trainings))
@@ -36,4 +36,4 @@ async function importAllTrainings() {
     gitUrls.forEach(importOneTraining)
 }
 
-exports.importAllTrainings = importAllTrainings
+importAllTrainings()

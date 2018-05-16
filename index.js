@@ -1,12 +1,13 @@
 const config = require('./config.js')
 const express = require('express')
-const trImports =require('./training.importer')
 const utils = require('./utils')
+const { spawn } = require('child_process');
 
 config.cursusList.forEach(
     c => c.trainings.forEach(
         t => t.gitUrl= `formation/${utils.findRepoName(t.git)}`)
     )
+
 
 const app = express()
 
@@ -19,4 +20,19 @@ app.get('/', (req, res) => {
 
 app.listen(8080)
 
-trImports.importAllTrainings();
+const importer = spawn('node',['training.importer.js'])
+
+
+importer.stdout.on('data', (data) => {
+    console.log(`[TRAINING IMPORT]: ${data}`);
+});
+
+importer.stderr.on('data', (data) => {
+    console.log(`[TRAINING IMPORT]: ${data}`);
+});
+
+importer.on('close', (code) => {
+    console.log(`[TRAINING IMPORT]: Fin ${code}`);
+});
+
+//;
