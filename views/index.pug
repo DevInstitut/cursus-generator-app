@@ -1,24 +1,34 @@
 html(lang=fr)
     head
-        title='Formation Développeur Java / Angular'
-        link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
-        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css")
+        title=cfg.tilte
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css")
+        link(rel="stylesheet", href="css/styles.css")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
     body.container
-        h1.header.center
-            span='Formation Développeur FullStack'
-        h4.header.center='#Java #Spring #Angular'
+        div.jumbotron.text-center.digi-bg
+            img(src=cfg.logo, height=100)
+            h1.display-4=cfg.title
+            h2
+                each kw in cfg.keywords
+                    span.badge.badge-dark.m-1='#'+kw
+            hr.my-4
+        each cursus in cfg.cursusList
+            div.card
+                div.card-body
+                    h5.card-title=cursus.name
+                    p.card-text
+                        each t, index in cursus.trainings
+                            div.card
+                                div.card-body
+                                    ul.list-unstyled
+                                        li.media
+                                            img.mr-3(src=t.image, width='10%')
+                                            div.media-body
 
-        ul.collection.with-header
-            each cursus in cfg.cursusList
-                li.collection-header
-                    h4=cursus.name
-                each t in cursus.trainings
-                    li.collection-item.avatar
-                        div
-                            img.circle(src=t.image)
-                            p=t.name
-                            a.secondary-content(href=t.git)
-                                i.material-icons='send'
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js')
+                                                h5.mt-0.mb-1='#' + (index+1) + ' ' + t.name
+                                                ul
+                                                    each g in t.goals || []
+                                                        li=g
+                                                a.btn.btn-primary.float-right(href=t.gitUrl) Consulter
+            br

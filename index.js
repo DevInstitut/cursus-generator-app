@@ -1,5 +1,13 @@
 const config = require('./config.js')
 const express = require('express')
+const trImports =require('./training.importer')
+const utils = require('./utils')
+
+config.cursusList.forEach(
+    c => c.trainings.forEach(
+        t => t.gitUrl= `formation/${utils.findRepoName(t.git)}`)
+    )
+
 const app = express()
 
 app.set('view engine', 'pug')
@@ -9,4 +17,6 @@ app.get('/', (req, res) => {
     res.render('index', {cfg: config})
 })
 
-app.listen(3000)
+app.listen(8080)
+
+trImports.importAllTrainings();
