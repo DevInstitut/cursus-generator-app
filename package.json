@@ -4,7 +4,8 @@
   "description": "",
   "main": "config.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "node training.importer.js"
   },
   "keywords": [],
   "author": "",

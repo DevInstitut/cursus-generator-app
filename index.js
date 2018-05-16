@@ -19,20 +19,3 @@ app.get('/', (req, res) => {
 })
 
 app.listen(8080)
-
-const importer = spawn('node',['training.importer.js'])
-
-
-importer.stdout.on('data', (data) => {
-    console.log(`[TRAINING IMPORT]: ${data}`);
-});
-
-importer.stderr.on('data', (data) => {
-    console.log(`[TRAINING IMPORT]: ${data}`);
-});
-
-importer.on('close', (code) => {
-    console.log(`[TRAINING IMPORT]: Fin ${code}`);
-});
-
-//;
