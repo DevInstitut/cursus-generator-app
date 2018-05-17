@@ -14,6 +14,18 @@ config.cursusList.forEach(
 
 const app = express()
 
+app.set('view engine', 'pug')
+app.use(express.static('public'))
+
+app.get('/', (req, res) => {
+    res.render('index', {cfg: config})
+})
+
+app.post('/update', (req, res) => {
+    const up = spawn('node', ['tools/import.one.training.js', req.query.repoUrl])
+    connectChildProcess(up)
+})
+app.listen(8080)
 
 
 const server = ws.createServer( (newConnection) => {
@@ -38,18 +50,6 @@ const connectChildProcess = (childProc) => {
     });
 }
 
-app.set('view engine', 'pug')
-app.use(express.static('public'))
-
-app.get('/', (req, res) => {
-    res.render('index', {cfg: config})
-})
-
-app.post('/update', (req, res) => {
-    const up = spawn('node', ['tools/import.one.training.js', req.query.repoUrl])
-    connectChildProcess(up)
-})
-
 
 const importAll = () => {
     const iall = spawn('node', ['tools/import.all.trainings.js'])
@@ -58,7 +58,7 @@ const importAll = () => {
 
 importAll()
 
-app.listen(8080)
+
 
 
 
